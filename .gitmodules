@@ -1,0 +1,6 @@
+[submodule "packages/core"]
+	path = packages/core
+	url = git@github.com:ysha-nepal/core.git
+[submodule "packages/event"]
+	path = packages/event
+	url = git@github.com:ysha-nepal/event.git

@@ -1,0 +1,24 @@
+<?php
+
+namespace {{PACKAGE}}\Controllers\{{DIR}};
+
+use Core\Controllers\Traits\CrudTrait;
+use App\Http\Controllers\Controller;
+use {{PACKAGE}}\Repositories\{{DIR}}\{{MODEL}}Repository;
+use {{PACKAGE}}\UI\{{MODEL}}UI;
+
+class {{MODEL}}Controller extends Controller
+{
+    use CrudTrait;
+
+    protected $model;
+
+    public function __construct({{MODEL}}Repository $model)
+    {
+        $this->model = $model;
+        $this->ui = new {{MODEL}}UI;
+        $this->view = "";
+        $this->title = "";
+        $this->package = "{{PACKAGE_NAME}}";
+    }
+}

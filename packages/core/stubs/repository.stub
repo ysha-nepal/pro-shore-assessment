@@ -1,0 +1,20 @@
+<?php
+
+namespace {{PACKAGE}}\Repositories\{{DIR}};
+
+use {{PACKAGE}}\Models\{{MODEL}};
+use Core\Repositories\Common\Traits\CommonRepositoryTrait;
+use Core\Repositories\Common\Traits\CrudRepositoryTrait;
+use Core\Repositories\Common\Traits\SearchRepositoryTrait;
+
+class {{MODEL}}Repository
+{
+    use CommonRepositoryTrait, CrudRepositoryTrait, SearchRepositoryTrait;
+
+    public $model;
+
+    public function __construct({{MODEL}} $model)
+    {
+        $this->model = $model;
+    }
+}
